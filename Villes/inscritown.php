@@ -66,7 +66,7 @@ if(!empty($_POST)){ //On appelle les portiers que si le formulaire est validé
 			$_SESSION["message"] = "<div class=\"alert alert-success w-50 mx-auto\" role=\"alert\">
   				Bravo vous zetes bien inscrit, il est temps de vous connecter !
 			</div>";
-			header("Location:connexion.php");
+			header("Location:inscritown.php");
 			exit;
 		}else
 		{
@@ -92,7 +92,7 @@ include("inc/header.inc.php");
 			$_SESSION["message"] = "";
 	?>
 
-    <form method="post" action="" class="w-50 mx-auto">
+    <form method="POST" action="inscritown.php" class="w-50 mx-auto">
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="nom" placeholder="admin" name="nom">
